@@ -1,21 +1,22 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import "@/styles/globals.css";
 import { WavyBackground } from "@/components/ui/wavy-background";
+import Hero from "@/components/Hero.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-  <main>
+<Layout title="Sanan Abbasov">
+  <main class="max-w-[1200px] m-auto">
     <WavyBackground
-      colors={["#38bdf8", "#818cf8", "#c084fc", "#e879f9", "#22d3ee"]}
-      waveWidth={50}
-      backgroundFill="white"
-      blur={2}
+      colors={["#09003E", "#366CB9", "#040018", "#18C48F", "#D6D6D6"]}
+      waveWidth={20}
+      backgroundFill="transparent"
+      blur={5}
       speed="slow"
-      waveOpacity={1}
-	  client:load
+      waveOpacity={0.1}
+      client:load
     >
-      <h1>Hello world!</h1>
+      <Hero />
     </WavyBackground>
+    <div class="bg-red-500 w-52 h-52"></div>
   </main>
 </Layout>

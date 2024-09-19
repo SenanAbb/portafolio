@@ -14,7 +14,14 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
-      colors: {},
+      colors: {
+        "blue": {
+          DEFAULT: "#09003E",
+          "light": "#366CB9",
+          "dark": "#040018"
+        },
+
+      },
     },
   },
   plugins: [require("tailwindcss-animate"), addVariablesForColors],
