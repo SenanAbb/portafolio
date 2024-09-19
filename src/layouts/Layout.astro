@@ -4,11 +4,14 @@ interface Props {
   title: string;
 }
 
+import i18next from "i18next";
+import Navbar from "@/components/Navbar.astro";
+
 const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={i18next.language}>
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
@@ -24,6 +27,7 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body class="bg-gradient-to-b from-blue to-blue-dark">
+    <Navbar />
     <slot />
   </body>
 </html>
@@ -32,17 +36,25 @@ const { title } = Astro.props;
     font-family: "Preahvihear", sans-serif;
   }
   h1 {
-    font-size: 52px;
+    font-size: 48px;
   }
   h2 {
-    font-size: 36px;
+    font-size: 32px;
   }
   p {
-    font-size: 22px;
+    font-size: 20px;
+  }
+  a {
+    font-size: 16px;
+  }
+  a:hover {
+    transition: all ease-in-out 100ms;
+    color: #366cb9;
   }
   h1,
   h2,
-  p {
+  p,
+  a {
     color: #fafafa;
   }
 </style>

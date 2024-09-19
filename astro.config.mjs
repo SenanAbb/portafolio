@@ -1,4 +1,3 @@
-// @ts-check
 import { defineConfig } from "astro/config";
 import react from "@astrojs/react";
 import tailwind from "@astrojs/tailwind";
@@ -13,4 +12,8 @@ export default defineConfig({
     }),
     astroI18next(),
   ],
+  i18n: {
+    defaultLocale: "en",
+    locales: ["es", "en"],
+  },
 });

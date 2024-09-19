@@ -1,16 +1,56 @@
 ---
+import { t } from "i18next";
 
+import GitHubIcon from "@/components/icons/GitHubIcon.astro";
+import InstagramIcon from "@/components/icons/InstagramIcon.astro";
+import LinkedInIcon from "@/components/icons/LinkedInIcon.astro";
+import MailIcon from "@/components/icons/MailIcon.astro";
 ---
 
 <section
-  class="w-full flex flex-col md:flex-row gap-10 items-center justify-between"
+  class="h-screen flex flex-col pt-20 lg:p-0 lg:flex-row lg:justify-center items-center gap-10"
 >
-  <img src="/images/avatar.png" alt="Avatar image" />
-  <div>
-    <h1 class="text-center">
-      Hello! I am
+  <img class="w-96 h-96" src="/images/avatar.png" alt="Avatar image" />
+  <div
+    class="text-center lg:text-left flex flex-col items-center lg:items-start gap-5 lg:gap-2 lg:pt-10"
+  >
+    <h1>
+      {t("home.hero_title")}
       <span class="text-blue-light">Sanan</span>
     </h1>
-    <h2><span class="text-blue-light"></span></h2>
+    <h2>
+      <span class="text-blue-light">{t("home.hero_subtitle_left")}</span>{
+        t("home.hero_subtitle_right")
+      }
+    </h2>
+    <p>
+      {t("home.hero_text_left")}<span class="text-blue-light"
+        >{t("home.hero_text_center")}</span
+      >{t("home.hero_text_right")}
+    </p>
+    <div class="flex flex-row items-center gap-2 mt-2">
+      <a
+        href="https://github.com/SenanAbb/"
+        class="cursor-pointer group text-gray-400"><GitHubIcon /></a
+      >
+      <a
+        href="https://www.instagram.com/lretroo/"
+        class="cursor-pointer group text-gray-400"><InstagramIcon /></a
+      >
+      <a
+        href="https://www.linkedin.com/in/sanan-abbasov-520a94204/"
+        class="cursor-pointer group text-gray-400"><LinkedInIcon /></a
+      >
+      <a
+        href="mailto:senan996@gmail.com"
+        class="cursor-pointer group text-gray-400"><MailIcon /></a
+      >
+    </div>
   </div>
 </section>
+
+<style>
+  svg:hover {
+    fill: red;
+  }
+</style>

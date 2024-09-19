@@ -1,0 +1,130 @@
+---
+import { t } from "i18next";
+---
+
+<nav class="w-screen h-20 bg-blue-dark flex absolute">
+  <!-- PC NAVBAR -->
+  <div class="hidden lg:flex max-w-[1200px] m-auto justify-between w-full">
+    <div class="flex items-center gap-10">
+      <a href="/">{t("home.nav_link_home")}</a>
+      <a href="#experience">{t("home.nav_link_experience")}</a>
+      <a href="#projects">{t("home.nav_link_projects")}</a>
+      <a href="#about">{t("home.nav_link_about")}</a>
+    </div>
+    <a
+      href="#contact"
+      class="bg-gradient-to-tr from-blue-950 to-blue-light text-white px-4 py-2 rounded-md cursor-pointer hover:text-white hover:bg-gradient-to-tr hover:from-blue-950 hover:to-blue-900"
+      >Contact</a
+    >
+  </div>
+
+  <!-- MOBILE NAVBAR -->
+  <div class="lg:hidden w-screen flex justify-between items-center px-10">
+    <div id="menuToggle">
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="menu">
+        <li><a href="/">{t("home.nav_link_home")}</a></li>
+        <li><a href="#experience">{t("home.nav_link_experience")}</a></li>
+        <li><a href="#projects">{t("home.nav_link_projects")}</a></li>
+        <li><a href="#about">{t("home.nav_link_about")}</a></li>
+      </ul>
+    </div>
+    <a
+      href="#contact"
+      class="bg-gradient-to-tr from-blue-950 to-blue-light text-white px-4 py-2 rounded-md cursor-pointer hover:text-white hover:bg-gradient-to-tr hover:from-blue-950 hover:to-blue-900"
+      >Contact</a
+    >
+  </div>
+</nav>
+
+<style>
+  #menuToggle {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle input {
+    display: flex;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+  }
+
+  #menuToggle span {
+    display: flex;
+    width: 29px;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #ffffff;
+    border-radius: 3px;
+    z-index: 11;
+    transform-origin: 5px 0px;
+    transition:
+      transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      opacity 0.55s ease;
+  }
+
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-3px, -1px);
+    background: white;
+  }
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  #menu {
+    position: absolute;
+    width: 90%;
+    height: 102vh;
+    box-shadow: 0 0 10px #85888c;
+    margin: -50px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background-color: #040018;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #menu li {
+    padding: 10px 0;
+    transition-delay: 2s;
+  }
+
+  #menu li a {
+    font-size: 2rem;
+  }
+
+  #menuToggle input:checked ~ ul {
+    transform: none;
+  }
+</style>

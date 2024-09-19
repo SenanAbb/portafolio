@@ -1,22 +1,14 @@
 ---
+import { changeLanguage } from "i18next";
 import Layout from "../layouts/Layout.astro";
-import { WavyBackground } from "@/components/ui/wavy-background";
 import Hero from "@/components/Hero.astro";
+
+changeLanguage("en");
 ---
 
 <Layout title="Sanan Abbasov">
-  <main class="max-w-[1200px] m-auto">
-    <WavyBackground
-      colors={["#09003E", "#366CB9", "#040018", "#18C48F", "#D6D6D6"]}
-      waveWidth={20}
-      backgroundFill="transparent"
-      blur={5}
-      speed="slow"
-      waveOpacity={0.1}
-      client:load
-    >
-      <Hero />
-    </WavyBackground>
-    <div class="bg-red-500 w-52 h-52"></div>
+  <main class="max-w-[1200px] mx-auto px-2">
+    <Hero />
+    <div class="h-96"></div>
   </main>
 </Layout>
