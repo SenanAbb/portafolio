@@ -2,13 +2,17 @@
 import { changeLanguage } from "i18next";
 import Layout from "../layouts/Layout.astro";
 import Hero from "@/components/Hero.astro";
+import Description from "@/components/Description.astro";
+import WorkExperience from "@/components/WorkExperience.tsx";
 
 changeLanguage("en");
 ---
 
 <Layout title="Sanan Abbasov">
-  <main class="max-w-[1200px] mx-auto px-2">
+  <main class="max-w-[1200px] mx-auto px-10">
     <Hero />
-    <div class="h-96"></div>
+    <Description />
+    <WorkExperience />
+    <div class="h-[1200px]"></div>
   </main>
 </Layout>

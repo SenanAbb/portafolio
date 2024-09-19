@@ -6,6 +6,7 @@ interface Props {
 
 import i18next from "i18next";
 import Navbar from "@/components/Navbar.astro";
+import { BackgroundBeams } from "@/components/ui/baclground-beams";
 
 const { title } = Astro.props;
 ---
@@ -29,11 +30,15 @@ const { title } = Astro.props;
   <body class="bg-gradient-to-b from-blue to-blue-dark">
     <Navbar />
     <slot />
+    <BackgroundBeams className="-z-10"/>
   </body>
 </html>
 <style is:global>
   body {
     font-family: "Preahvihear", sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
   }
   h1 {
     font-size: 48px;

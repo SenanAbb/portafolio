@@ -1,14 +1,22 @@
 {
   "home": {
+    "link_home": "Home",
+    "nav_link_experience": "Experience",
+    "nav_link_projects": "Projects",
+    "nav_link_about": "About",
     "hero_title": "Hello! I am",
     "hero_subtitle_left": "Full-Stack ",
     "hero_subtitle_right": "Web Developer",
     "hero_text_left": "Building the ",
     "hero_text_center": "future",
     "hero_text_right": ", one pixel and one line of code at time",
-    "link_home": "Home",
-    "nav_link_experience": "Experience",
-    "nav_link_projects": "Projects",
-    "nav_link_about": "About"
+    "description_title_left": "I'm a ",
+    "description_title_right": "Software Engineer",
+    "description_text": "A self-taught Full Stack Web Developer with over 3 years of experience in the industry. I craft robust and dynamic web solutions that seamlessly integrate user experience with business objectives, delivering high-impact digital products.",
+    "experience_1_title": "Málaga Provincial Council",
+    "experience_1_date": "April 2021 - August 2021",
+    "experience_1_description_list_1": "Development of a parser to organize government public contracts.",
+    "experience_1_description_list_2": "Creation of SQL databases and ER diagrams.",
+    "experience_1_description_list_3": "Programming a parser in Java to read XML documents and store the information in the database."
   }
 }

@@ -15,12 +15,14 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
-        "blue": {
+        blue: {
           DEFAULT: "#09003E",
-          "light": "#366CB9",
-          "dark": "#040018"
+          light: "#366CB9",
+          dark: "#040018",
         },
-
+      },
+      boxShadow: {
+        "inner-custom": "inset 0 3px 1px rgba(6, 44, 98, 0.8)", // Personaliza aquí
       },
     },
   },
