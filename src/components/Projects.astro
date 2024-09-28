@@ -1,0 +1,35 @@
+---
+import { t } from "i18next";
+import ProjectCard from "./ProjectCard.astro";
+
+const data = [
+  {
+    title: t("home.project_1_title"),
+    description: t("home.project_1_description"),
+    img: "/images/project1.png",
+    url: "https://www.avocat-asmaekirimov.com/",
+    code: "https://github.com/SenanAbb/asmae-web",
+  },
+  {
+    title: t("home.project_2_title"),
+    description: t("home.project_2_description"),
+    img: "/images/project2.png",
+    url: null,
+    code: "https://github.com/SenanAbb/trello-clone",
+  },
+  {
+    title: t("home.project_3_title"),
+    description: t("home.project_3_description"),
+    img: "/images/project3.png",
+    url: null,
+    code: "https://github.com/SenanAbb/spotify-clone",
+  },
+];
+
+console.log(t("home.project_3_title"));
+---
+
+<section class="mt-40">
+  <h1>Projects</h1>
+  {data.map((el) => <ProjectCard data={el} />)}
+</section>

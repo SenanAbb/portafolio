@@ -1,0 +1,35 @@
+---
+const { data } = Astro.props;
+---
+
+<div class="mt-10">
+  <h2 class="text-blue-light mb-4">{data.title}</h2>
+  <div class="flex flex-col items-center lg:flex lg:flex-row">
+    <img class="rounded-md w-60 md:w-96" loading="lazy" src={data.img} />
+    <div
+      class="bg-blue/30 backdrop-blur-sm w-full -translate-y-5 lg:-translate-x-5 lg:translate-y-0 py-5 px-4 lg:pl-10 rounded-md"
+    >
+      <p>{data.description}</p>
+      <div class="flex gap-4 mt-8">
+        {data.url ? <a href={data.url}>Web</a> : null}
+        <a href={data.code}>Code</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  a {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    border-color: rgba(255, 255, 255);
+  }
+
+  a:hover {
+    scale: 1.1;
+  }
+</style>

@@ -29,8 +29,14 @@
     "experience_2_description_description_2_list_1": "Full-stack management of the website, including front-end and back-end maintenance.",
     "experience_2_description_description_2_list_2": "Business line analysis to identify and implement opportunities for growth.",
     "experience_2_description_description_2_list_3": "Continuous improvement of user experience through feature updates and optimization.",
-    "experience_2_description_title_3": "Technologies Used:",
+    "experience_2_description_title_3": "Technologies used:",
     "experience_2_description_description_3_list_1": "Frontend: JavaScript with Next.js framework.",
-    "experience_2_description_description_3_list_2": "Backend: JavaScript with Express framework."
+    "experience_2_description_description_3_list_2": "Backend: JavaScript with Express framework.",
+    "project_1_title": "Lawyer website",
+    "project_1_description": "This project is a website built with Next.js and React, without a backend, designed for a lawyer in France. The site is simple, featuring an automated contact form for sending emails. It showcases legal services in family law, labor law, and real estate law with a professional and easy-to-navigate design.",
+    "project_2_title": "Trello 2.0",
+    "project_2_description": "This project is a Trello clone where the most important features are the drag-and-drop functionality and the use of artificial intelligence to suggest which tasks to prioritize. Built with Next.js, Appwrite, Tailwind, and ChatGPT-3.5, the application focuses on intuitive task management and AI-powered task recommendations to enhance productivity, all without requiring user authentication.",
+    "project_3_title": "Spotify clone",
+    "project_3_description": "This project is a Spotify clone built with Astro and Tailwind, focusing on implementing Astro's View Transitions and leveraging a JavaScript audio library for managing song playback and volume control. The design emphasizes smooth transitions and a seamless music experience."
   }
 }
