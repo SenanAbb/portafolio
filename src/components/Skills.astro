@@ -1,0 +1,61 @@
+---
+import SkillCard from "@/components/SkillCard.astro";
+
+const data: any = [
+  {
+    title: "Astro",
+    src: "/images/Astro.png",
+  },
+  {
+    title: "CSS",
+    src: "/images/CSS.png",
+  },
+  {
+    title: "Git",
+    src: "/images/Git.png",
+  },
+  {
+    title: "HTML",
+    src: "/images/HTML.png",
+  },
+  {
+    title: "JS",
+    src: "/images/JS.png",
+  },
+  {
+    title: "Mongo",
+    src: "/images/Mongo.png",
+  },
+  {
+    title: "NextJS",
+    src: "/images/NextJS.png",
+  },
+  {
+    title: "NodeJS",
+    src: "/images/NodeJS.png",
+  },
+  {
+    title: "React",
+    src: "/images/React.png",
+  },
+  {
+    title: "SASS",
+    src: "/images/SASS.png",
+  },
+  {
+    title: "SQL",
+    src: "/images/SQL.png",
+  },
+  {
+    title: "Tailwind",
+    src: "/images/Tailwind.png",
+  },
+];
+---
+
+<section class="mt-40">
+  <h1 class="mb-10">Skills</h1>
+  <div class="grid gap-5 grid-cols-2 md:grid-cols-4 lg:grid-cols-6">
+    {data.map((el: any) => <SkillCard title={el.title} img={el.src} />)}
+  </div>
+</section>

@@ -1,0 +1,69 @@
+---
+import { t } from "i18next";
+import ExperienceCard from "./ExperienceCard.astro";
+---
+
+<section class="mt-40">
+  <h1>Work Experience</h1>
+  <ExperienceCard>
+    <h2 class="mb-10">{t("home.experience_1_title")}</h2>
+    <h2 class="mb-5 text-blue-light">{t("home.experience_1_date")}</h2>
+    <p class="mb-2">{t("home.experience_1_description_title_1")}</p>
+    <p>{t("home.experience_1_description_description_1")}</p>
+    <p class="my-2">{t("home.experience_1_description_title_2")}</p>
+    <ul class="ml-5 list-disc marker:text-gray-200">
+      <li>
+        <h3 class="text-gray-200">
+          {t("home.experience_1_description_description_2_list_1")}
+        </h3>
+      </li>
+      <li>
+        <h3 class="text-gray-200">
+          {t("home.experience_1_description_description_2_list_2")}
+        </h3>
+      </li>
+      <li>
+        <h3 class="text-gray-200">
+          {t("home.experience_1_description_description_2_list_3")}
+        </h3>
+      </li>
+    </ul>
+  </ExperienceCard>
+  <ExperienceCard>
+    <h2 class="mb-10">{t("home.experience_2_title")}</h2>
+    <h2 class="mb-5 text-blue-light">{t("home.experience_2_date")}</h2>
+    <p class="mb-2">{t("home.experience_2_description_title_1")}</p>
+    <p>{t("home.experience_2_description_description_1")}</p>
+    <p class="my-2">{t("home.experience_1_description_title_2")}</p>
+    <ul class="ml-5 list-disc marker:text-gray-200">
+      <li>
+        <h3 class="text-gray-200">
+          {t("home.experience_2_description_description_2_list_1")}
+        </h3>
+      </li>
+      <li>
+        <h3 class="text-gray-200">
+          {t("home.experience_2_description_description_2_list_2")}
+        </h3>
+      </li>
+      <li>
+        <h3 class="text-gray-200">
+          {t("home.experience_2_description_description_2_list_3")}
+        </h3>
+      </li>
+    </ul>
+    <p class="my-2">{t("home.experience_2_description_title_3")}</p>
+    <ul class="ml-5 list-disc marker:text-gray-200">
+      <li>
+        <h3 class="text-gray-200">
+          {t("home.experience_2_description_description_3_list_1")}
+        </h3>
+      </li>
+      <li>
+        <h3 class="text-gray-200">
+          {t("home.experience_2_description_description_3_list_2")}
+        </h3>
+      </li>
+    </ul>
+  </ExperienceCard>
+</section>

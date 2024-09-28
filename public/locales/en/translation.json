@@ -15,8 +15,22 @@
     "description_text": "A self-taught Full Stack Web Developer with over 3 years of experience in the industry. I craft robust and dynamic web solutions that seamlessly integrate user experience with business objectives, delivering high-impact digital products.",
     "experience_1_title": "Málaga Provincial Council",
     "experience_1_date": "April 2021 - August 2021",
-    "experience_1_description_list_1": "Development of a parser to organize government public contracts.",
-    "experience_1_description_list_2": "Creation of SQL databases and ER diagrams.",
-    "experience_1_description_list_3": "Programming a parser in Java to read XML documents and store the information in the database."
+    "experience_1_description_title_1": "Development of a Parser for Organizing Government Public Contracts",
+    "experience_1_description_description_1": "In charge of developing a parser to systematically organize government public contracts, ensuring the information is efficiently stored and accessible.",
+    "experience_1_description_title_2": "Key Responsibilities:",
+    "experience_1_description_description_2_list_1": "Creation and management of SQL databases and Entity-Relationship (ER) diagrams to structure contract data.",
+    "experience_1_description_description_2_list_2": "Development of a parser in Java to read XML documents and store the extracted data in a structured database.",
+    "experience_1_description_description_2_list_3": "Streamlining the data processing workflow to optimize the management and retrieval of public contract information.",
+    "experience_2_title": "Wiper Gaming",
+    "experience_2_date": "May 2022 - November 2022",
+    "experience_2_description_title_1": "Maintenance and Development of New Features for an Online Esports Academy",
+    "experience_2_description_description_1": "Responsible for the maintenance and continuous development of new features for an online platform dedicated to esports education. This involves overseeing both front-end and back-end systems, ensuring the seamless operation of the website and its functionalities.",
+    "experience_2_description_title_2": "Key Responsibilities:",
+    "experience_2_description_description_2_list_1": "Full-stack management of the website, including front-end and back-end maintenance.",
+    "experience_2_description_description_2_list_2": "Business line analysis to identify and implement opportunities for growth.",
+    "experience_2_description_description_2_list_3": "Continuous improvement of user experience through feature updates and optimization.",
+    "experience_2_description_title_3": "Technologies Used:",
+    "experience_2_description_description_3_list_1": "Frontend: JavaScript with Next.js framework.",
+    "experience_2_description_description_3_list_2": "Backend: JavaScript with Express framework."
   }
 }

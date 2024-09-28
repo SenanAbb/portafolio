@@ -1,0 +1,41 @@
+---
+const { title, img } = Astro.props;
+---
+
+<div
+  class="flex items-center justify-center m-auto w-32 h-32 bg-gradient-to-tr from-blue-950/50 to-blue-950/20 drop-shadow-sm shadow-inner-custom rounded-md hover:scale-110 hover:bg-gradient-to-br hover:from-blue-950/50 hover:to-blue-950/100 transition-all"
+>
+  <span class="absolute bg-blue-950 text-white py-1 px-5 rounded-sm drop-shadow-md">{title}</span>
+  <img src={img} alt={title + "img"} />
+</div>
+
+<style>
+    span {
+        transform: translateY(-50%);
+        opacity: 0%;
+        z-index: -10;
+        transition: all ease-in-out .2s;
+    }
+
+    div {
+      animation: 1s appear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 30%;
+    }
+
+    @keyframes appear {
+      from {
+        opacity: 0;
+        scale: .5;
+      }
+      to {
+        opacity: 1;
+        scale: 1;
+      }
+    }
+
+    div:hover span {
+        transform: translateY(-200%);
+        opacity: 100%;
+    }
+</style>
