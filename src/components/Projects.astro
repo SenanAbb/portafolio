@@ -25,11 +25,9 @@ const data = [
     code: "https://github.com/SenanAbb/spotify-clone",
   },
 ];
-
-console.log(t("home.project_3_title"));
 ---
 
-<section class="mt-40">
+<section id="projects" class="mt-40">
   <h1>Projects</h1>
   {data.map((el) => <ProjectCard data={el} />)}
 </section>

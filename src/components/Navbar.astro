@@ -6,10 +6,9 @@ import { t } from "i18next";
   <!-- PC NAVBAR -->
   <div class="hidden lg:flex max-w-[1200px] m-auto justify-between w-full">
     <div class="flex items-center gap-10">
-      <a href="/">{t("home.nav_link_home")}</a>
       <a href="#experience">{t("home.nav_link_experience")}</a>
+      <a href="#skills">{t("home.nav_link_skills")}</a>
       <a href="#projects">{t("home.nav_link_projects")}</a>
-      <a href="#about">{t("home.nav_link_about")}</a>
     </div>
     <a
       href="#contact"
@@ -26,10 +25,9 @@ import { t } from "i18next";
       <span></span>
       <span></span>
       <ul id="menu">
-        <li><a href="/">{t("home.nav_link_home")}</a></li>
         <li><a href="#experience">{t("home.nav_link_experience")}</a></li>
+        <li><a href="#skills">{t("home.nav_link_skills")}</a></li>
         <li><a href="#projects">{t("home.nav_link_projects")}</a></li>
-        <li><a href="#about">{t("home.nav_link_about")}</a></li>
       </ul>
     </div>
     <a
@@ -99,8 +97,7 @@ import { t } from "i18next";
 
   #menu {
     position: absolute;
-    width: 90%;
-    height: 102vh;
+    width: 102%;
     box-shadow: 0 0 10px #85888c;
     margin: -50px 0 0 -50px;
     padding: 50px;
@@ -108,7 +105,7 @@ import { t } from "i18next";
     background-color: #040018;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
+    transform: translate(0, -100%);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     display: flex;
     flex-direction: column;
