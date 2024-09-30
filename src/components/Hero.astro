@@ -10,13 +10,17 @@ import MailIcon from "@/icons/MailIcon.astro";
 <section
   class="lg:h-screen flex flex-col md: pt-20 lg:p-0 lg:flex-row lg:justify-center items-center gap-10"
 >
-  <img class="w-64 h-64 lg:w-96 lg:h-96" src="/images/avatar.png" alt="Avatar image" />
+  <img
+    class="w-64 h-64 lg:w-96 lg:h-96"
+    src="/images/avatar.png"
+    alt="Avatar image"
+  />
   <div
     class="text-center lg:text-left flex flex-col items-center lg:items-start gap-5 lg:gap-2 lg:pt-10"
   >
     <h1>
       {t("home.hero_title")}
-      <span class="text-blue-light">Sanan</span>
+      <span class="text-blue-light">Sanan.</span>
     </h1>
     <h2>
       <span class="text-blue-light">{t("home.hero_subtitle_left")}</span>{
@@ -48,3 +52,30 @@ import MailIcon from "@/icons/MailIcon.astro";
     </div>
   </div>
 </section>
+<style>
+  h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.3rem solid #366cb9; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    animation:
+      typing 1.5s steps(18, end),
+      blink-caret 0.5s step-end infinite;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    50% {
+      border-color: transparent;
+    }
+  }
+</style>

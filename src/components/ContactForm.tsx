@@ -4,7 +4,7 @@ function ContactForm() {
   const [state, handleSubmit] = useForm("xwpegbar");
   return (
     <form
-      className="w-[300px] sm:w-[500px] lg:w-[800px] h-auto mt-10 flex flex-col gap-5 bg-gradient-to-tr from-blue-900/40 to-blue-950/20 drop-shadow-sm shadow-inner-custom rounded-md p-8"
+      className="w-[300px] sm:w-[500px] lg:w-[800px] h-auto mt-10 flex flex-col gap-5 bg-gradient-to-tr from-blue-950 to-blue drop-shadow-sm shadow-inner-custom rounded-md p-8"
       onSubmit={handleSubmit}
     >
       <div className="flex flex-col">
