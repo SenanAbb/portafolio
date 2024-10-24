@@ -37,6 +37,8 @@
     "project_2_title": "Trello 2.0",
     "project_2_description": "This project is a Trello clone where the most important features are the drag-and-drop functionality and the use of artificial intelligence to suggest which tasks to prioritize. Built with Next.js, Appwrite, Tailwind, and ChatGPT-3.5, the application focuses on intuitive task management and AI-powered task recommendations to enhance productivity, all without requiring user authentication.",
     "project_3_title": "Spotify clone",
-    "project_3_description": "This project is a Spotify clone built with Astro and Tailwind, focusing on implementing Astro's View Transitions and leveraging a JavaScript audio library for managing song playback and volume control. The design emphasizes smooth transitions and a seamless music experience."
+    "project_3_description": "This project is a Spotify clone built with Astro and Tailwind, focusing on implementing Astro's View Transitions and leveraging a JavaScript audio library for managing song playback and volume control. The design emphasizes smooth transitions and a seamless music experience.",
+    "project_4_title": "Transfers Web (Work in progress)",
+    "project_4_description": "A passenger transportation booking web application designed for a transportation agency. Built with Next.js, the website offers users a simple and intuitive way to book transfers for personal or business trips. It includes features such as service descriptions, booking forms, and an optimized user interface for a seamless experience. My focus in this project was on creating a responsive, user-friendly design while maintaining high performance and functionality."
   }
 }
