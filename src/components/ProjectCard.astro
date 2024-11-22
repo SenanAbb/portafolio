@@ -12,7 +12,7 @@ const { data } = Astro.props;
       <p>{data.description}</p>
       <div class="flex gap-4 mt-8">
         {data.url ? <a href={data.url}>Web</a> : null}
-        <a href={data.code}>Code</a>
+        <a href={data.code} target="_blank">Code</a>
       </div>
     </div>
   </div>
